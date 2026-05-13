@@ -83,7 +83,7 @@ const [journeyDate, setJourneyDate] =
         const response =
           await axios.get(
 
-            `http://localhost:5000/search-stations?query=${value}`
+            `${import.meta.env.VITE_API_URL}/search-stations?query=${value}`
 
           );
 
